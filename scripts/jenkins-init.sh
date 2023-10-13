@@ -38,7 +38,7 @@ apt-get update
 apt-get install -y jenkins=${JENKINS_VERSION} unzip docker.io
 # enable docker and add perms
 usermod -G docker jenkins
-sudo systemctl enable docker
+systemctl enable docker
 service docker start
 service jenkins restart
 
